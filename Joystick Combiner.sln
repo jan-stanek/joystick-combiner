@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joystick Combiner", "Joystick Combiner\Joystick Combiner.csproj", "{B27C02AB-1757-4569-B15A-5858BDDC2CCB}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{919EB9DA-73F4-42EB-94AE-FC5CFD603CB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B27C02AB-1757-4569-B15A-5858BDDC2CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B27C02AB-1757-4569-B15A-5858BDDC2CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B27C02AB-1757-4569-B15A-5858BDDC2CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B27C02AB-1757-4569-B15A-5858BDDC2CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{919EB9DA-73F4-42EB-94AE-FC5CFD603CB0}.Debug|Any CPU.ActiveCfg = Debug
+		{919EB9DA-73F4-42EB-94AE-FC5CFD603CB0}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
