@@ -24,9 +24,9 @@ namespace joystickCombiner.axis
     enum AxisMethod
     {
         WeightenedSum = 0,
-        Change = 3,
-        Minimum = 1,
-        Maximum = 2
+        Change = 1,
+        Minimum = 2,
+        Maximum = 3
     }
 
     abstract class Axis
