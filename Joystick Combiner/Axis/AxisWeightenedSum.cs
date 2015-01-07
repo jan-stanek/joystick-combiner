@@ -17,7 +17,7 @@ namespace joystickCombiner.axis
         static byte leftMode;
         static byte rightMode;
        
-        public AxisWeightenedSum(DeviceReader leftDeviceReader, DeviceReader rightDeviceReader, VJoyDevice vJoyDevice, string axisInput, string axisOutput, bool centered)
+        public AxisWeightenedSum(DeviceReader leftDeviceReader, DeviceReader rightDeviceReader, VJoyDevice vJoyDevice, AxisName axisInput, AxisName axisOutput, bool centered)
             : base(leftDeviceReader, rightDeviceReader, vJoyDevice, axisInput, axisOutput, centered) 
         {
             modesWeights = new byte[3];

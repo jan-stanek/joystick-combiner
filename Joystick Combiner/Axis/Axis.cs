@@ -9,16 +9,36 @@ using joystickCombiner.vJoyDevice;
 
 namespace joystickCombiner.axis
 {
+    enum AxisName
+    {
+        none = 0,
+        X = 1,
+        Y = 2,
+        Z = 3,
+        RotationX = 4,
+        RotationY = 5,
+        RotationZ = 6,
+        Slider = 7
+    }
+
+    enum AxisMethod
+    {
+        WeightenedSum = 0,
+        Change = 3,
+        Minimum = 1,
+        Maximum = 2
+    }
+
     abstract class Axis
     {
         protected DeviceReader leftDeviceReader;
         protected DeviceReader rightDeviceReader;
         protected VJoyDevice vJoyDevice;
-        protected string axisInput;
-        protected string axisOutput;
+        protected AxisName axisInput;
+        protected AxisName axisOutput;
         protected bool centered;
 
-        public Axis(DeviceReader leftDeviceReader, DeviceReader rightDeviceReader, VJoyDevice vJoyDevice, string axisInput, string axisOutput, bool centered)
+        public Axis(DeviceReader leftDeviceReader, DeviceReader rightDeviceReader, VJoyDevice vJoyDevice, AxisName axisInput, AxisName axisOutput, bool centered)
         {
             this.leftDeviceReader = leftDeviceReader;
             this.rightDeviceReader = rightDeviceReader;

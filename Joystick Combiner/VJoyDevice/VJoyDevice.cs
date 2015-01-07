@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 using vJoyInterfaceWrap;
 
+using joystickCombiner.axis;
+
 namespace joystickCombiner.vJoyDevice
 {
     abstract class VJoyDevice
@@ -41,31 +43,31 @@ namespace joystickCombiner.vJoyDevice
             device.RelinquishVJD(id);
         }
 
-        public void setAxisState(string axis, int value)
+        public void setAxisState(AxisName axis, int value)
         {
             value = Math.Min(Math.Max(value, 1), 32767);
 
             switch(axis)
             {
-                case "X":
+                case AxisName.X:
                     state.AxisX = value;
                     break;
-                case "Y":
+                case AxisName.Y:
                     state.AxisY = value;
                     break;
-                case "Z":
+                case AxisName.Z:
                     state.AxisZ = value;
                     break;
-                case "RotationX":
+                case AxisName.RotationX:
                     state.AxisXRot = value;
                     break;
-                case "RotationY":
+                case AxisName.RotationY:
                     state.AxisYRot = value;
                     break;
-                case "RotationZ":
+                case AxisName.RotationZ:
                     state.AxisZRot = value;
                     break;
-                case "Slider":
+                case AxisName.Slider:
                     state.Slider = value;
                     break;
             }

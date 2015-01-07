@@ -11,7 +11,7 @@ namespace joystickCombiner.axis
 {
     class AxisMaximum : Axis
     {
-        public AxisMaximum(DeviceReader leftDeviceReader, DeviceReader rightDeviceReader, VJoyDevice vJoyDevice, string axisInput, string axisOutput, bool centered)
+        public AxisMaximum(DeviceReader leftDeviceReader, DeviceReader rightDeviceReader, VJoyDevice vJoyDevice, AxisName axisInput, AxisName axisOutput, bool centered)
             : base(leftDeviceReader, rightDeviceReader, vJoyDevice, axisInput, axisOutput, centered) { }
 
         public override int computeValue()

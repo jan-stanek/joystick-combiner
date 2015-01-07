@@ -45,22 +45,22 @@ namespace joystickCombiner.virtualDevice
             vJoyDevice.stop();
         }
 
-        protected void addAxis(string axisInput, string axisOutput, byte method, byte change, bool centered)
+        protected void addAxis(AxisName axisInput, AxisName axisOutput, AxisMethod method, byte change, bool centered)
         {
-            if (!axisInput.Equals("none"))
+            if (axisInput != AxisName.none)
             {
                 switch (method)
                 {
-                    case 0:
+                    case AxisMethod.WeightenedSum:
                         axesList.AddLast(new AxisWeightenedSum(leftDeviceReader, rightDeviceReader, vJoyDevice, axisInput, axisOutput, centered));
                         break;
-                    case 1:
+                    case AxisMethod.Change:
                         axesList.AddLast(new AxisChange(leftDeviceReader, rightDeviceReader, vJoyDevice, axisInput, axisOutput, centered, change));
                         break;
-                    case 2:
+                    case AxisMethod.Minimum:
                         axesList.AddLast(new AxisMinimum(leftDeviceReader, rightDeviceReader, vJoyDevice, axisInput, axisOutput, centered));
                         break;
-                    case 3:
+                    case AxisMethod.Maximum:
                         axesList.AddLast(new AxisMaximum(leftDeviceReader, rightDeviceReader, vJoyDevice, axisInput, axisOutput, centered));
                         break;
                 }

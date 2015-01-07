@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 using SharpDX.DirectInput;
 
+using joystickCombiner.axis;
+
 namespace joystickCombiner.deviceReader
 {
     abstract class DeviceReader
@@ -22,23 +24,23 @@ namespace joystickCombiner.deviceReader
             device.Acquire();
         }
 
-        public int getAxisState(string axis)
+        public int getAxisState(AxisName axis)
         {
             switch (axis)
             {
-                case "X":
+                case AxisName.X:
                     return device.GetCurrentState().X;
-                case "Y":
+                case AxisName.Y:
                     return device.GetCurrentState().Y;
-                case "Z":
+                case AxisName.Z:
                     return device.GetCurrentState().Z;
-                case "RotationX":
+                case AxisName.RotationX:
                     return device.GetCurrentState().RotationX;
-                case "RotationY":
+                case AxisName.RotationY:
                     return device.GetCurrentState().RotationY;
-                case "RotationZ":
+                case AxisName.RotationZ:
                     return device.GetCurrentState().RotationZ;
-                case "Slider":
+                case AxisName.Slider:
                     return device.GetCurrentState().Sliders[0];
             }
             return 0;

@@ -133,10 +133,10 @@ namespace joystickCombiner.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("none")]
-        public string axisXAxis {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public byte axisXAxis {
             get {
-                return ((string)(this["axisXAxis"]));
+                return ((byte)(this["axisXAxis"]));
             }
             set {
                 this["axisXAxis"] = value;
@@ -169,10 +169,10 @@ namespace joystickCombiner.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("none")]
-        public string axisYAxis {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public byte axisYAxis {
             get {
-                return ((string)(this["axisYAxis"]));
+                return ((byte)(this["axisYAxis"]));
             }
             set {
                 this["axisYAxis"] = value;
@@ -205,10 +205,10 @@ namespace joystickCombiner.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("none")]
-        public string axisTwistAxis {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public byte axisTwistAxis {
             get {
-                return ((string)(this["axisTwistAxis"]));
+                return ((byte)(this["axisTwistAxis"]));
             }
             set {
                 this["axisTwistAxis"] = value;
@@ -241,10 +241,10 @@ namespace joystickCombiner.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("none")]
-        public string axisThrottleAxis {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public byte axisThrottleAxis {
             get {
-                return ((string)(this["axisThrottleAxis"]));
+                return ((byte)(this["axisThrottleAxis"]));
             }
             set {
                 this["axisThrottleAxis"] = value;
@@ -277,10 +277,10 @@ namespace joystickCombiner.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("none")]
-        public string axisRotary1Axis {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public byte axisRotary1Axis {
             get {
-                return ((string)(this["axisRotary1Axis"]));
+                return ((byte)(this["axisRotary1Axis"]));
             }
             set {
                 this["axisRotary1Axis"] = value;
@@ -313,10 +313,10 @@ namespace joystickCombiner.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("none")]
-        public string axisRotary2Axis {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public byte axisRotary2Axis {
             get {
-                return ((string)(this["axisRotary2Axis"]));
+                return ((byte)(this["axisRotary2Axis"]));
             }
             set {
                 this["axisRotary2Axis"] = value;
@@ -349,10 +349,10 @@ namespace joystickCombiner.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("none")]
-        public string axisSliderAxis {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public byte axisSliderAxis {
             get {
-                return ((string)(this["axisSliderAxis"]));
+                return ((byte)(this["axisSliderAxis"]));
             }
             set {
                 this["axisSliderAxis"] = value;
@@ -385,10 +385,10 @@ namespace joystickCombiner.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("none")]
-        public string axisLeftToeAxis {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public byte axisLeftToeAxis {
             get {
-                return ((string)(this["axisLeftToeAxis"]));
+                return ((byte)(this["axisLeftToeAxis"]));
             }
             set {
                 this["axisLeftToeAxis"] = value;
@@ -421,10 +421,10 @@ namespace joystickCombiner.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("none")]
-        public string axisRightToeAxis {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public byte axisRightToeAxis {
             get {
-                return ((string)(this["axisRightToeAxis"]));
+                return ((byte)(this["axisRightToeAxis"]));
             }
             set {
                 this["axisRightToeAxis"] = value;
@@ -457,10 +457,10 @@ namespace joystickCombiner.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("none")]
-        public string axisRudderAxis {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public byte axisRudderAxis {
             get {
-                return ((string)(this["axisRudderAxis"]));
+                return ((byte)(this["axisRudderAxis"]));
             }
             set {
                 this["axisRudderAxis"] = value;

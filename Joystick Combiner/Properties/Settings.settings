@@ -29,8 +29,8 @@
     <Setting Name="autostart" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="axisXAxis" Type="System.String" Scope="User">
-      <Value Profile="(Default)">none</Value>
+    <Setting Name="axisXAxis" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="axisXMethod" Type="System.Byte" Scope="User">
       <Value Profile="(Default)">0</Value>
@@ -38,8 +38,8 @@
     <Setting Name="axisXChange" Type="System.Byte" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="axisYAxis" Type="System.String" Scope="User">
-      <Value Profile="(Default)">none</Value>
+    <Setting Name="axisYAxis" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="axisYMethod" Type="System.Byte" Scope="User">
       <Value Profile="(Default)">0</Value>
@@ -47,8 +47,8 @@
     <Setting Name="axisYChange" Type="System.Byte" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="axisTwistAxis" Type="System.String" Scope="User">
-      <Value Profile="(Default)">none</Value>
+    <Setting Name="axisTwistAxis" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="axisTwistMethod" Type="System.Byte" Scope="User">
       <Value Profile="(Default)">0</Value>
@@ -56,8 +56,8 @@
     <Setting Name="axisTwistChange" Type="System.Byte" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="axisThrottleAxis" Type="System.String" Scope="User">
-      <Value Profile="(Default)">none</Value>
+    <Setting Name="axisThrottleAxis" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="axisThrottleMethod" Type="System.Byte" Scope="User">
       <Value Profile="(Default)">0</Value>
@@ -65,8 +65,8 @@
     <Setting Name="axisThrottleChange" Type="System.Byte" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="axisRotary1Axis" Type="System.String" Scope="User">
-      <Value Profile="(Default)">none</Value>
+    <Setting Name="axisRotary1Axis" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="axisRotary1Method" Type="System.Byte" Scope="User">
       <Value Profile="(Default)">0</Value>
@@ -74,8 +74,8 @@
     <Setting Name="axisRotary1Change" Type="System.Byte" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="axisRotary2Axis" Type="System.String" Scope="User">
-      <Value Profile="(Default)">none</Value>
+    <Setting Name="axisRotary2Axis" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="axisRotary2Method" Type="System.Byte" Scope="User">
       <Value Profile="(Default)">0</Value>
@@ -83,8 +83,8 @@
     <Setting Name="axisRotary2Change" Type="System.Byte" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="axisSliderAxis" Type="System.String" Scope="User">
-      <Value Profile="(Default)">none</Value>
+    <Setting Name="axisSliderAxis" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="axisSliderMethod" Type="System.Byte" Scope="User">
       <Value Profile="(Default)">0</Value>
@@ -92,8 +92,8 @@
     <Setting Name="axisSliderChange" Type="System.Byte" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="axisLeftToeAxis" Type="System.String" Scope="User">
-      <Value Profile="(Default)">none</Value>
+    <Setting Name="axisLeftToeAxis" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="axisLeftToeMethod" Type="System.Byte" Scope="User">
       <Value Profile="(Default)">0</Value>
@@ -101,8 +101,8 @@
     <Setting Name="axisLeftToeChange" Type="System.Byte" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="axisRightToeAxis" Type="System.String" Scope="User">
-      <Value Profile="(Default)">none</Value>
+    <Setting Name="axisRightToeAxis" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="axisRightToeMethod" Type="System.Byte" Scope="User">
       <Value Profile="(Default)">0</Value>
@@ -110,8 +110,8 @@
     <Setting Name="axisRightToeChange" Type="System.Byte" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="axisRudderAxis" Type="System.String" Scope="User">
-      <Value Profile="(Default)">none</Value>
+    <Setting Name="axisRudderAxis" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="axisRudderMethod" Type="System.Byte" Scope="User">
       <Value Profile="(Default)">0</Value>

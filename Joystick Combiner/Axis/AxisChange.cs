@@ -19,7 +19,7 @@ namespace joystickCombiner.axis
         private long lastTime = 0;
         private byte side = 1;
 
-        public AxisChange(DeviceReader leftDeviceReader, DeviceReader rightDeviceReader, VJoyDevice vJoyDevice, string axisInput, string axisOutput, bool centered, byte change)
+        public AxisChange(DeviceReader leftDeviceReader, DeviceReader rightDeviceReader, VJoyDevice vJoyDevice, AxisName axisInput, AxisName axisOutput, bool centered, byte change)
             : base(leftDeviceReader, rightDeviceReader, vJoyDevice, axisInput, axisOutput, centered)
         {
             this.change = change;
