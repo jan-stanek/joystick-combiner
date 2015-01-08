@@ -72,246 +72,108 @@ namespace joystickCombiner
 
         private void comboXMethod_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Properties.Settings.Default.axisXMethod = (byte)(AxisMethod)Enum.Parse(typeof(AxisMethod), comboXMethod.SelectedItem.ToString());
             methodChanged(comboXMethod, textboxXChange, checkboxXCentered);
         }
 
         private void comboYMethod_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Properties.Settings.Default.axisYMethod = (byte)(AxisMethod)Enum.Parse(typeof(AxisMethod), comboYMethod.SelectedItem.ToString());
             methodChanged(comboYMethod, textboxYChange, checkboxYCentered);
         }
 
         private void comboTwistMethod_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Properties.Settings.Default.axisTwistMethod = (byte)(AxisMethod)Enum.Parse(typeof(AxisMethod), comboTwistMethod.SelectedItem.ToString());
             methodChanged(comboTwistMethod, textboxTwistChange, checkboxTwistCentered);
         }
 
         private void comboThrottleMethod_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Properties.Settings.Default.axisThrottleMethod = (byte)(AxisMethod)Enum.Parse(typeof(AxisMethod), comboThrottleMethod.SelectedItem.ToString());
             methodChanged(comboThrottleMethod, textboxThrottleChange, checkboxThrottleCentered);
         }
 
         private void comboRotary1Method_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Properties.Settings.Default.axisRotary1Method = (byte)(AxisMethod)Enum.Parse(typeof(AxisMethod), comboRotary1Method.SelectedItem.ToString());
             methodChanged(comboRotary1Method, textboxRotary1Change, checkboxRotary1Centered);
         }
 
         private void comboRotary2Method_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Properties.Settings.Default.axisRotary2Method = (byte)(AxisMethod)Enum.Parse(typeof(AxisMethod), comboRotary2Method.SelectedItem.ToString());
             methodChanged(comboRotary2Method, textboxRotary2Change, checkboxRotary2Centered);
         }
 
         private void comboSliderMethod_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Properties.Settings.Default.axisSliderMethod = (byte)(AxisMethod)Enum.Parse(typeof(AxisMethod), comboSliderMethod.SelectedItem.ToString());
             methodChanged(comboSliderMethod, textboxSliderChange, checkboxSliderCentered);
         }
 
         private void comboLeftToeMethod_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Properties.Settings.Default.axisLeftToeMethod = (byte)(AxisMethod)Enum.Parse(typeof(AxisMethod), comboLeftToeMethod.SelectedItem.ToString());
             methodChanged(comboLeftToeMethod, textboxLeftToeChange, checkboxLeftToeCentered);
         }
 
         private void comboRightToeMethod_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Properties.Settings.Default.axisRightToeMethod = (byte)(AxisMethod)Enum.Parse(typeof(AxisMethod), comboRightToeMethod.SelectedItem.ToString());
             methodChanged(comboRightToeMethod, textboxRightToeChange, checkboxRightToeCentered);
         }
 
         private void comboRudderMethod_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Properties.Settings.Default.axisRudderMethod = (byte)(AxisMethod)Enum.Parse(typeof(AxisMethod), comboRudderMethod.SelectedItem.ToString());
             methodChanged(comboRudderMethod, textboxRudderChange, checkboxRudderCentered);
         }
 
-        private void comboXAxis_SelectedIndexChanged(object sender, EventArgs e)
+        private void AxesForm_FormClosing(object sender, FormClosingEventArgs e)
         {
+            Properties.Settings.Default.axisXMethod = (byte)(AxisMethod)Enum.Parse(typeof(AxisMethod), comboXMethod.SelectedItem.ToString());
+            Properties.Settings.Default.axisYMethod = (byte)(AxisMethod)Enum.Parse(typeof(AxisMethod), comboYMethod.SelectedItem.ToString());
+            Properties.Settings.Default.axisTwistMethod = (byte)(AxisMethod)Enum.Parse(typeof(AxisMethod), comboTwistMethod.SelectedItem.ToString());
+            Properties.Settings.Default.axisThrottleMethod = (byte)(AxisMethod)Enum.Parse(typeof(AxisMethod), comboThrottleMethod.SelectedItem.ToString());
+            Properties.Settings.Default.axisRotary1Method = (byte)(AxisMethod)Enum.Parse(typeof(AxisMethod), comboRotary1Method.SelectedItem.ToString());
+            Properties.Settings.Default.axisRotary2Method = (byte)(AxisMethod)Enum.Parse(typeof(AxisMethod), comboRotary2Method.SelectedItem.ToString());
+            Properties.Settings.Default.axisSliderMethod = (byte)(AxisMethod)Enum.Parse(typeof(AxisMethod), comboSliderMethod.SelectedItem.ToString());
+            Properties.Settings.Default.axisLeftToeMethod = (byte)(AxisMethod)Enum.Parse(typeof(AxisMethod), comboLeftToeMethod.SelectedItem.ToString());
+            Properties.Settings.Default.axisRightToeMethod = (byte)(AxisMethod)Enum.Parse(typeof(AxisMethod), comboRightToeMethod.SelectedItem.ToString());
+            Properties.Settings.Default.axisRudderMethod = (byte)(AxisMethod)Enum.Parse(typeof(AxisMethod), comboRudderMethod.SelectedItem.ToString());
+
             Properties.Settings.Default.axisXAxis = (byte)(AxisName)Enum.Parse(typeof(AxisName), comboXAxis.SelectedItem.ToString());
-        }
-
-        private void comboYAxis_SelectedIndexChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisYAxis = (byte)(AxisName)Enum.Parse(typeof(AxisName), comboYAxis.SelectedItem.ToString());
-        }
-
-        private void comboTwistAxis_SelectedIndexChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisTwistAxis = (byte)(AxisName)Enum.Parse(typeof(AxisName), comboTwistAxis.SelectedItem.ToString());
-        }
-
-        private void comboThrottleAxis_SelectedIndexChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisThrottleAxis = (byte)(AxisName)Enum.Parse(typeof(AxisName), comboThrottleAxis.SelectedItem.ToString());
-        }
-
-        private void comboRotary1Axis_SelectedIndexChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisRotary1Axis = (byte)(AxisName)Enum.Parse(typeof(AxisName), comboRotary1Axis.SelectedItem.ToString());
-        }
-
-        private void comboRotary2Axis_SelectedIndexChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisRotary2Axis = (byte)(AxisName)Enum.Parse(typeof(AxisName), comboRotary2Axis.SelectedItem.ToString());
-        }
-
-        private void comboSliderAxis_SelectedIndexChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisSliderAxis = (byte)(AxisName)Enum.Parse(typeof(AxisName), comboSliderAxis.SelectedItem.ToString());
-        }
-
-        private void comboLeftToeAxis_SelectedIndexChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisLeftToeAxis = (byte)(AxisName)Enum.Parse(typeof(AxisName), comboLeftToeAxis.SelectedItem.ToString());
-        }
-
-        private void comboRightToeAxis_SelectedIndexChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisRightToeAxis = (byte)(AxisName)Enum.Parse(typeof(AxisName), comboRightToeAxis.SelectedItem.ToString());
-        }
-
-        private void comboRudderAxis_SelectedIndexChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisRudderAxis = (byte)(AxisName)Enum.Parse(typeof(AxisName), comboRudderAxis.SelectedItem.ToString());
-        }
 
-        private void checkboxXCentered_CheckedChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisXCentered = checkboxXCentered.Checked;
-        }
-
-        private void checkboxYCentered_CheckedChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisYCentered = checkboxYCentered.Checked;
-        }
-
-        private void checkboxTwistCentered_CheckedChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisTwistCentered = checkboxTwistCentered.Checked;
-        }
-
-        private void checkboxThrottleCentered_CheckedChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisThrottleCentered = checkboxThrottleCentered.Checked;
-        }
-
-        private void checkboxRotary1Centered_CheckedChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisRotary1Centered = checkboxRotary1Centered.Checked;
-        }
-
-        private void checkboxRotary2Centered_CheckedChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisRotary2Centered = checkboxRotary2Centered.Checked;
-        }
-
-        private void checkboxSliderCentered_CheckedChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisSliderCentered = checkboxSliderCentered.Checked;
-        }
-
-        private void checkboxLeftToeCentered_CheckedChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisLeftToeCentered = checkboxLeftToeCentered.Checked;
-        }
-
-        private void checkboxRightToeCentered_CheckedChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisRightToeCentered = checkboxRightToeCentered.Checked;
-        }
-
-        private void checkboxRudderCentered_CheckedChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisRudderCentered = checkboxRudderCentered.Checked;
-        }
 
-        private void textboxMode1_TextChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.mode1Weight = byte.Parse(textboxMode1.Text);
-        }
-
-        private void textboxMode2_TextChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.mode2Weight = byte.Parse(textboxMode2.Text);
-        }
-
-        private void textboxMode3_TextChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.mode3Weight = byte.Parse(textboxMode3.Text);
-        }
 
-        private void textboxXChange_TextChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisXChange = byte.Parse(textboxXChange.Text);
-        }
-
-        private void textboxYChange_TextChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisYChange = byte.Parse(textboxYChange.Text);
-        }
-
-        private void textboxTwistChange_TextChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisTwistChange = byte.Parse(textboxTwistChange.Text);
-        }
-
-        private void textboxThrottleChange_TextChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisThrottleChange = byte.Parse(textboxThrottleChange.Text);
-        }
-
-        private void textboxRotary1Change_TextChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisRotary1Change = byte.Parse(textboxRotary1Change.Text);
-        }
-
-        private void textboxRotary2Change_TextChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisRotary2Change = byte.Parse(textboxRotary2Change.Text);
-        }
-
-        private void textboxSliderChange_TextChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisSliderChange = byte.Parse(textboxSliderChange.Text);
-        }
-
-        private void textboxLeftToeChange_TextChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisLeftToeChange = byte.Parse(textboxLeftToeChange.Text);
-        }
-
-        private void textboxRightToeChange_TextChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisRightToeChange = byte.Parse(textboxRightToeChange.Text);
-        }
-
-        private void textboxRudderChange_TextChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.axisRudderChange = byte.Parse(textboxRudderChange.Text);
-        }
 
-        private void textboxChange_TextChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.changeInterval = short.Parse(textboxChange.Text);
-        }
 
-        private void textboxMode1Button_TextChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.mode1Button = byte.Parse(textboxMode1Button.Text);
-        }
-
-        private void textboxMode2Button_TextChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.mode2Button = byte.Parse(textboxMode2Button.Text);
-        }
-
-        private void textboxMode3Button_TextChanged(object sender, EventArgs e)
-        {
             Properties.Settings.Default.mode3Button = byte.Parse(textboxMode3Button.Text);
         }
     }

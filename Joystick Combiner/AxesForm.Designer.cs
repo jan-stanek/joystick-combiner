@@ -162,7 +162,6 @@
             this.textboxMode3.TabIndex = 7;
             this.textboxMode3.Text = "100";
             this.textboxMode3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textboxMode3.TextChanged += new System.EventHandler(this.textboxMode3_TextChanged);
             // 
             // textboxMode2
             // 
@@ -172,7 +171,6 @@
             this.textboxMode2.TabIndex = 4;
             this.textboxMode2.Text = "50";
             this.textboxMode2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textboxMode2.TextChanged += new System.EventHandler(this.textboxMode2_TextChanged);
             // 
             // labelMode3
             // 
@@ -200,7 +198,6 @@
             this.textboxMode1.TabIndex = 1;
             this.textboxMode1.Text = "0";
             this.textboxMode1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textboxMode1.TextChanged += new System.EventHandler(this.textboxMode1_TextChanged);
             // 
             // labelMode1
             // 
@@ -252,7 +249,6 @@
             this.textboxMode3Button.TabIndex = 14;
             this.textboxMode3Button.Text = "0";
             this.textboxMode3Button.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textboxMode3Button.TextChanged += new System.EventHandler(this.textboxMode3Button_TextChanged);
             // 
             // textboxMode2Button
             // 
@@ -262,7 +258,6 @@
             this.textboxMode2Button.TabIndex = 12;
             this.textboxMode2Button.Text = "0";
             this.textboxMode2Button.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textboxMode2Button.TextChanged += new System.EventHandler(this.textboxMode2Button_TextChanged);
             // 
             // labelMode2Button
             // 
@@ -281,7 +276,6 @@
             this.textboxMode1Button.TabIndex = 10;
             this.textboxMode1Button.Text = "0";
             this.textboxMode1Button.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textboxMode1Button.TextChanged += new System.EventHandler(this.textboxMode1Button_TextChanged);
             // 
             // labelMode1Button
             // 
@@ -315,7 +309,6 @@
             this.checkboxLeftToeCentered.TabIndex = 4;
             this.checkboxLeftToeCentered.Text = "centered";
             this.checkboxLeftToeCentered.UseVisualStyleBackColor = true;
-            this.checkboxLeftToeCentered.CheckedChanged += new System.EventHandler(this.checkboxLeftToeCentered_CheckedChanged);
             // 
             // comboLeftToeAxis
             // 
@@ -325,7 +318,6 @@
             this.comboLeftToeAxis.Name = "comboLeftToeAxis";
             this.comboLeftToeAxis.Size = new System.Drawing.Size(100, 21);
             this.comboLeftToeAxis.TabIndex = 0;
-            this.comboLeftToeAxis.SelectedIndexChanged += new System.EventHandler(this.comboLeftToeAxis_SelectedIndexChanged);
             // 
             // labelLeftToeChangeP
             // 
@@ -342,7 +334,6 @@
             this.textboxLeftToeChange.Name = "textboxLeftToeChange";
             this.textboxLeftToeChange.Size = new System.Drawing.Size(80, 20);
             this.textboxLeftToeChange.TabIndex = 2;
-            this.textboxLeftToeChange.TextChanged += new System.EventHandler(this.textboxLeftToeChange_TextChanged);
             // 
             // comboLeftToeMethod
             // 
@@ -377,7 +368,6 @@
             this.checkboxRightToeCentered.TabIndex = 4;
             this.checkboxRightToeCentered.Text = "centered";
             this.checkboxRightToeCentered.UseVisualStyleBackColor = true;
-            this.checkboxRightToeCentered.CheckedChanged += new System.EventHandler(this.checkboxRightToeCentered_CheckedChanged);
             // 
             // comboRightToeAxis
             // 
@@ -387,7 +377,6 @@
             this.comboRightToeAxis.Name = "comboRightToeAxis";
             this.comboRightToeAxis.Size = new System.Drawing.Size(100, 21);
             this.comboRightToeAxis.TabIndex = 0;
-            this.comboRightToeAxis.SelectedIndexChanged += new System.EventHandler(this.comboRightToeAxis_SelectedIndexChanged);
             // 
             // labelRightToeChangeP
             // 
@@ -404,7 +393,6 @@
             this.textboxRightToeChange.Name = "textboxRightToeChange";
             this.textboxRightToeChange.Size = new System.Drawing.Size(80, 20);
             this.textboxRightToeChange.TabIndex = 2;
-            this.textboxRightToeChange.TextChanged += new System.EventHandler(this.textboxRightToeChange_TextChanged);
             // 
             // comboRightToeMethod
             // 
@@ -439,7 +427,6 @@
             this.checkboxRudderCentered.TabIndex = 4;
             this.checkboxRudderCentered.Text = "centered";
             this.checkboxRudderCentered.UseVisualStyleBackColor = true;
-            this.checkboxRudderCentered.CheckedChanged += new System.EventHandler(this.checkboxRudderCentered_CheckedChanged);
             // 
             // comboRudderAxis
             // 
@@ -449,7 +436,6 @@
             this.comboRudderAxis.Name = "comboRudderAxis";
             this.comboRudderAxis.Size = new System.Drawing.Size(100, 21);
             this.comboRudderAxis.TabIndex = 0;
-            this.comboRudderAxis.SelectedIndexChanged += new System.EventHandler(this.comboRudderAxis_SelectedIndexChanged);
             // 
             // labelRudderChangeP
             // 
@@ -466,7 +452,6 @@
             this.textboxRudderChange.Name = "textboxRudderChange";
             this.textboxRudderChange.Size = new System.Drawing.Size(80, 20);
             this.textboxRudderChange.TabIndex = 2;
-            this.textboxRudderChange.TextChanged += new System.EventHandler(this.textboxRudderChange_TextChanged);
             // 
             // comboRudderMethod
             // 
@@ -517,7 +502,6 @@
             this.checkboxSliderCentered.TabIndex = 4;
             this.checkboxSliderCentered.Text = "centered";
             this.checkboxSliderCentered.UseVisualStyleBackColor = true;
-            this.checkboxSliderCentered.CheckedChanged += new System.EventHandler(this.checkboxSliderCentered_CheckedChanged);
             // 
             // comboSliderAxis
             // 
@@ -527,7 +511,6 @@
             this.comboSliderAxis.Name = "comboSliderAxis";
             this.comboSliderAxis.Size = new System.Drawing.Size(100, 21);
             this.comboSliderAxis.TabIndex = 0;
-            this.comboSliderAxis.SelectedIndexChanged += new System.EventHandler(this.comboSliderAxis_SelectedIndexChanged);
             // 
             // labelSliderChangeP
             // 
@@ -544,7 +527,6 @@
             this.textboxSliderChange.Name = "textboxSliderChange";
             this.textboxSliderChange.Size = new System.Drawing.Size(80, 20);
             this.textboxSliderChange.TabIndex = 2;
-            this.textboxSliderChange.TextChanged += new System.EventHandler(this.textboxSliderChange_TextChanged);
             // 
             // comboSliderMethod
             // 
@@ -579,7 +561,6 @@
             this.checkboxRotary2Centered.TabIndex = 4;
             this.checkboxRotary2Centered.Text = "centered";
             this.checkboxRotary2Centered.UseVisualStyleBackColor = true;
-            this.checkboxRotary2Centered.CheckedChanged += new System.EventHandler(this.checkboxRotary2Centered_CheckedChanged);
             // 
             // comboRotary2Axis
             // 
@@ -589,7 +570,6 @@
             this.comboRotary2Axis.Name = "comboRotary2Axis";
             this.comboRotary2Axis.Size = new System.Drawing.Size(100, 21);
             this.comboRotary2Axis.TabIndex = 0;
-            this.comboRotary2Axis.SelectedIndexChanged += new System.EventHandler(this.comboRotary2Axis_SelectedIndexChanged);
             // 
             // labelRotary2ChangeP
             // 
@@ -606,7 +586,6 @@
             this.textboxRotary2Change.Name = "textboxRotary2Change";
             this.textboxRotary2Change.Size = new System.Drawing.Size(80, 20);
             this.textboxRotary2Change.TabIndex = 2;
-            this.textboxRotary2Change.TextChanged += new System.EventHandler(this.textboxRotary2Change_TextChanged);
             // 
             // comboRotary2Method
             // 
@@ -641,7 +620,6 @@
             this.checkboxRotary1Centered.TabIndex = 4;
             this.checkboxRotary1Centered.Text = "centered";
             this.checkboxRotary1Centered.UseVisualStyleBackColor = true;
-            this.checkboxRotary1Centered.CheckedChanged += new System.EventHandler(this.checkboxRotary1Centered_CheckedChanged);
             // 
             // comboRotary1Axis
             // 
@@ -651,7 +629,6 @@
             this.comboRotary1Axis.Name = "comboRotary1Axis";
             this.comboRotary1Axis.Size = new System.Drawing.Size(100, 21);
             this.comboRotary1Axis.TabIndex = 0;
-            this.comboRotary1Axis.SelectedIndexChanged += new System.EventHandler(this.comboRotary1Axis_SelectedIndexChanged);
             // 
             // labelRotary1ChangeP
             // 
@@ -668,7 +645,6 @@
             this.textboxRotary1Change.Name = "textboxRotary1Change";
             this.textboxRotary1Change.Size = new System.Drawing.Size(80, 20);
             this.textboxRotary1Change.TabIndex = 2;
-            this.textboxRotary1Change.TextChanged += new System.EventHandler(this.textboxRotary1Change_TextChanged);
             // 
             // comboRotary1Method
             // 
@@ -703,7 +679,6 @@
             this.checkboxThrottleCentered.TabIndex = 4;
             this.checkboxThrottleCentered.Text = "centered";
             this.checkboxThrottleCentered.UseVisualStyleBackColor = true;
-            this.checkboxThrottleCentered.CheckedChanged += new System.EventHandler(this.checkboxThrottleCentered_CheckedChanged);
             // 
             // comboThrottleAxis
             // 
@@ -713,7 +688,6 @@
             this.comboThrottleAxis.Name = "comboThrottleAxis";
             this.comboThrottleAxis.Size = new System.Drawing.Size(100, 21);
             this.comboThrottleAxis.TabIndex = 0;
-            this.comboThrottleAxis.SelectedIndexChanged += new System.EventHandler(this.comboThrottleAxis_SelectedIndexChanged);
             // 
             // labelThrottleChangeP
             // 
@@ -730,7 +704,6 @@
             this.textboxThrottleChange.Name = "textboxThrottleChange";
             this.textboxThrottleChange.Size = new System.Drawing.Size(80, 20);
             this.textboxThrottleChange.TabIndex = 2;
-            this.textboxThrottleChange.TextChanged += new System.EventHandler(this.textboxThrottleChange_TextChanged);
             // 
             // comboThrottleMethod
             // 
@@ -765,7 +738,6 @@
             this.checkboxTwistCentered.TabIndex = 4;
             this.checkboxTwistCentered.Text = "centered";
             this.checkboxTwistCentered.UseVisualStyleBackColor = true;
-            this.checkboxTwistCentered.CheckedChanged += new System.EventHandler(this.checkboxTwistCentered_CheckedChanged);
             // 
             // comboTwistAxis
             // 
@@ -775,7 +747,6 @@
             this.comboTwistAxis.Name = "comboTwistAxis";
             this.comboTwistAxis.Size = new System.Drawing.Size(100, 21);
             this.comboTwistAxis.TabIndex = 0;
-            this.comboTwistAxis.SelectedIndexChanged += new System.EventHandler(this.comboTwistAxis_SelectedIndexChanged);
             // 
             // labelTwistChangeP
             // 
@@ -792,7 +763,6 @@
             this.textboxTwistChange.Name = "textboxTwistChange";
             this.textboxTwistChange.Size = new System.Drawing.Size(80, 20);
             this.textboxTwistChange.TabIndex = 2;
-            this.textboxTwistChange.TextChanged += new System.EventHandler(this.textboxTwistChange_TextChanged);
             // 
             // comboTwistMethod
             // 
@@ -827,7 +797,6 @@
             this.checkboxXCentered.TabIndex = 4;
             this.checkboxXCentered.Text = "centered";
             this.checkboxXCentered.UseVisualStyleBackColor = true;
-            this.checkboxXCentered.CheckedChanged += new System.EventHandler(this.checkboxXCentered_CheckedChanged);
             // 
             // comboXAxis
             // 
@@ -837,7 +806,6 @@
             this.comboXAxis.Name = "comboXAxis";
             this.comboXAxis.Size = new System.Drawing.Size(100, 21);
             this.comboXAxis.TabIndex = 0;
-            this.comboXAxis.SelectedIndexChanged += new System.EventHandler(this.comboXAxis_SelectedIndexChanged);
             // 
             // labelXChangeP
             // 
@@ -854,7 +822,6 @@
             this.textboxXChange.Name = "textboxXChange";
             this.textboxXChange.Size = new System.Drawing.Size(80, 20);
             this.textboxXChange.TabIndex = 2;
-            this.textboxXChange.TextChanged += new System.EventHandler(this.textboxXChange_TextChanged);
             // 
             // comboXMethod
             // 
@@ -889,7 +856,6 @@
             this.checkboxYCentered.TabIndex = 4;
             this.checkboxYCentered.Text = "centered";
             this.checkboxYCentered.UseVisualStyleBackColor = true;
-            this.checkboxYCentered.CheckedChanged += new System.EventHandler(this.checkboxYCentered_CheckedChanged);
             // 
             // comboYAxis
             // 
@@ -899,7 +865,6 @@
             this.comboYAxis.Name = "comboYAxis";
             this.comboYAxis.Size = new System.Drawing.Size(100, 21);
             this.comboYAxis.TabIndex = 0;
-            this.comboYAxis.SelectedIndexChanged += new System.EventHandler(this.comboYAxis_SelectedIndexChanged);
             // 
             // labelYChangeP
             // 
@@ -916,7 +881,6 @@
             this.textboxYChange.Name = "textboxYChange";
             this.textboxYChange.Size = new System.Drawing.Size(80, 20);
             this.textboxYChange.TabIndex = 2;
-            this.textboxYChange.TextChanged += new System.EventHandler(this.textboxYChange_TextChanged);
             // 
             // comboYMethod
             // 
@@ -969,7 +933,6 @@
             this.textboxChange.TabIndex = 1;
             this.textboxChange.Text = "0";
             this.textboxChange.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textboxChange.TextChanged += new System.EventHandler(this.textboxChange_TextChanged);
             // 
             // labelChange
             // 
@@ -994,6 +957,7 @@
             this.MaximizeBox = false;
             this.Name = "AxesForm";
             this.Text = "Axes";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AxesForm_FormClosing);
             this.groupModes.ResumeLayout(false);
             this.groupModes.PerformLayout();
             this.groupLeftToe.ResumeLayout(false);

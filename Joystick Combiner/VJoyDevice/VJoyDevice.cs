@@ -75,13 +75,13 @@ namespace joystickCombiner.vJoyDevice
 
         public void setButtonsState(byte buttons, bool[] values)
         {
-            for (byte i = 31; i >= 0 ; i--)
+            for (short i = 31; i >= 0 ; i--)
             {
                 state.Buttons <<= 1;
                 if (i < buttons && values[i])
                     state.Buttons++;
             }
-            for (byte i = 63; i >= 32; i--)
+            for (short i = 63; i >= 32; i--)
             {
                 state.ButtonsEx1 <<= 1;
                 if (i < buttons && values[i])
