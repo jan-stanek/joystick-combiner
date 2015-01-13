@@ -34,7 +34,7 @@ namespace JoystickCombiner.virtualDevice
                 foreach(Axis axis in axesList)
                     axis.update();
 
-                byte buttonsCount = Math.Min(leftDeviceReader.getButtonsCount(), rightDeviceReader.getButtonsCount());
+                byte buttonsCount = leftDeviceReader == null ? rightDeviceReader.getButtonsCount() : rightDeviceReader == null ? leftDeviceReader.getButtonsCount() : Math.Min(leftDeviceReader.getButtonsCount(), rightDeviceReader.getButtonsCount());
                 
                 if (buttonsCount > 0)
                 {
@@ -42,7 +42,7 @@ namespace JoystickCombiner.virtualDevice
 
                     for (byte i = 0; i < buttonsCount; i++)
                     {
-                        buttons[i] = leftDeviceReader.getButtonsState()[i] || rightDeviceReader.getButtonsState()[i];
+                        buttons[i] = leftDeviceReader == null ? rightDeviceReader.getButtonsState()[i] : rightDeviceReader == null ? leftDeviceReader.getButtonsState()[i] : leftDeviceReader.getButtonsState()[i] || rightDeviceReader.getButtonsState()[i];
                     }
 
                     vJoyDevice.setButtonsState(buttonsCount, buttons);
