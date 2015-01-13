@@ -1,4 +1,4 @@
-﻿namespace joystickCombiner.Properties {
+﻿namespace JoystickCombiner.Properties {
     
     
     // This class allows you to handle specific events on the settings class:

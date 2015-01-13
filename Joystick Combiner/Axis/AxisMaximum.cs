@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using joystickCombiner.deviceReader;
-using joystickCombiner.vJoyDevice;
+using JoystickCombiner.deviceReader;
+using JoystickCombiner.vJoyDevice;
 
-namespace joystickCombiner.axis
+namespace JoystickCombiner.axis
 {
     class AxisMaximum : Axis
     {

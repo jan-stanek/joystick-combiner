@@ -12,7 +12,7 @@ using SharpDX.DirectInput;
 using Microsoft.Win32;
 
 
-namespace joystickCombiner
+namespace JoystickCombiner
 {
     public partial class MainForm : Form
     {

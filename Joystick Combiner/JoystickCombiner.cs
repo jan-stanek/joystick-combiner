@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 using SharpDX.DirectInput;
 
-using joystickCombiner.deviceReader;
-using joystickCombiner.virtualDevice;
+using JoystickCombiner.deviceReader;
+using JoystickCombiner.virtualDevice;
 
-namespace joystickCombiner
+namespace JoystickCombiner
 {
     class JoystickCombiner
     {

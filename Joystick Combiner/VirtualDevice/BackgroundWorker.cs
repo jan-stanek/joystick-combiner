@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 using System.Threading;
 
-using joystickCombiner.deviceReader;
-using joystickCombiner.axis;
-using joystickCombiner.vJoyDevice;
+using JoystickCombiner.deviceReader;
+using JoystickCombiner.axis;
+using JoystickCombiner.vJoyDevice;
 
-namespace joystickCombiner.virtualDevice
+namespace JoystickCombiner.virtualDevice
 {
     class BackgroundWorker
     {

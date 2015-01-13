@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace joystickCombiner.vJoyDevice
+namespace JoystickCombiner.vJoyDevice
 {
     class VJoyRudder : VJoyDevice
     {

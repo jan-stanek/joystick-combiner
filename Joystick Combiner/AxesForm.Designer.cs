@@ -1,4 +1,4 @@
-﻿namespace joystickCombiner
+﻿namespace JoystickCombiner
 {
     partial class AxesForm
     {

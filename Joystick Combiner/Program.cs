@@ -7,7 +7,7 @@ using System.Windows.Forms;
 using System.Diagnostics;
 
 
-namespace joystickCombiner
+namespace JoystickCombiner
 {
     static class Program
     {

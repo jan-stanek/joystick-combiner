@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 using vJoyInterfaceWrap;
 
-using joystickCombiner.axis;
+using JoystickCombiner.axis;
 
-namespace joystickCombiner.vJoyDevice
+namespace JoystickCombiner.vJoyDevice
 {
     abstract class VJoyDevice
     {
