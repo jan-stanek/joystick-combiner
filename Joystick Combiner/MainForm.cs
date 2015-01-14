@@ -116,6 +116,16 @@ namespace JoystickCombiner
             checkAutostart.Checked = Properties.Settings.Default.autostart;
         }
 
+        private void updateAutostart()
+        {
+            RegistryKey registryKey = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Run", true);
+
+            if (checkAutostart.Checked)
+                registryKey.SetValue("Joystick combiner", Application.ExecutablePath);
+            else if (registryKey.GetValue("Joystick combiner") != null)
+                registryKey.DeleteValue("Joystick combiner");
+        }
+
         private void buttonStart_Click(object sender, EventArgs e)
         {
             disableSetting();
@@ -125,6 +135,7 @@ namespace JoystickCombiner
         private void buttonSaveSettings_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.Save();
+            updateAutostart();            
         }
 
         private void buttonLoadSettings_Click(object sender, EventArgs e)
@@ -189,13 +200,6 @@ namespace JoystickCombiner
         private void checkAutostart_CheckedChanged(object sender, EventArgs e)
         {
             Properties.Settings.Default.autostart = checkAutostart.Checked;
-
-            RegistryKey registryKey = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Run", true);
-            
-            if (checkAutostart.Checked)
-                registryKey.SetValue("Joystick Combiner", Application.ExecutablePath);
-            else
-                registryKey.DeleteValue("Joystick Combiner");
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
