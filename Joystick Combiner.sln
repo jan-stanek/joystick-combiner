@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoystickCombiner", "Joystick combiner\JoystickCombiner.csproj", "{B27C02AB-1757-4569-B15A-5858BDDC2CCB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoystickCombiner", "JoystickCombiner\JoystickCombiner.csproj", "{B27C02AB-1757-4569-B15A-5858BDDC2CCB}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{919EB9DA-73F4-42EB-94AE-FC5CFD603CB0}"
 EndProject
