@@ -136,13 +136,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Axis\AxisChange.cs" />
-    <Compile Include="Axis\AxisMaximum.cs" />
-    <Compile Include="Axis\AxisMinimum.cs" />
-    <Compile Include="Axis\AxisWeightenedSum.cs" />
-    <Compile Include="DeviceReader\DeviceReader.cs" />
-    <Compile Include="DeviceReader\JoystickReader.cs" />
-    <Compile Include="DeviceReader\RudderReader.cs" />
+    <Compile Include="Axes\AxisChange.cs" />
+    <Compile Include="Axes\AxisMaximum.cs" />
+    <Compile Include="Axes\AxisMinimum.cs" />
+    <Compile Include="Axes\AxisWeightenedSum.cs" />
+    <Compile Include="DeviceReaders\DeviceReader.cs" />
+    <Compile Include="DeviceReaders\JoystickReader.cs" />
+    <Compile Include="DeviceReaders\RudderReader.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,14 +159,14 @@
       <DependentUpon>AxesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
-    <Compile Include="Axis\Axis.cs" />
-    <Compile Include="VirtualDevice\BackgroundWorker.cs" />
-    <Compile Include="VirtualDevice\VirtualDevice.cs" />
-    <Compile Include="VirtualDevice\VirtualJoystick.cs" />
-    <Compile Include="VirtualDevice\VirtualRudder.cs" />
-    <Compile Include="VJoyDevice\VJoyDevice.cs" />
-    <Compile Include="VJoyDevice\VJoyJoystick.cs" />
-    <Compile Include="VJoyDevice\VJoyRudder.cs" />
+    <Compile Include="Axes\Axis.cs" />
+    <Compile Include="VirtualDevices\BackgroundWorker.cs" />
+    <Compile Include="VirtualDevices\VirtualDevice.cs" />
+    <Compile Include="VirtualDevices\VirtualJoystick.cs" />
+    <Compile Include="VirtualDevices\VirtualRudder.cs" />
+    <Compile Include="VJoyDevices\VJoyDevice.cs" />
+    <Compile Include="VJoyDevices\VJoyJoystick.cs" />
+    <Compile Include="VJoyDevices\VJoyRudder.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

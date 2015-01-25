@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using JoystickCombiner.axis;
+using JoystickCombiner.Axes;
 
 namespace JoystickCombiner
 {
@@ -155,26 +155,119 @@ namespace JoystickCombiner
             Properties.Settings.Default.axisRightToeCentered = checkboxRightToeCentered.Checked;
             Properties.Settings.Default.axisRudderCentered = checkboxRudderCentered.Checked;
 
-            Properties.Settings.Default.mode1Weight = byte.Parse(textboxMode1.Text);
-            Properties.Settings.Default.mode2Weight = byte.Parse(textboxMode2.Text);
-            Properties.Settings.Default.mode3Weight = byte.Parse(textboxMode3.Text);
+            try
+            {
+                byte tmp;
 
-            Properties.Settings.Default.axisXChange = byte.Parse(textboxXChange.Text);
-            Properties.Settings.Default.axisYChange = byte.Parse(textboxYChange.Text);
-            Properties.Settings.Default.axisTwistChange = byte.Parse(textboxTwistChange.Text);
-            Properties.Settings.Default.axisThrottleChange = byte.Parse(textboxThrottleChange.Text);
-            Properties.Settings.Default.axisRotary1Change = byte.Parse(textboxRotary1Change.Text);
-            Properties.Settings.Default.axisRotary2Change = byte.Parse(textboxRotary2Change.Text);
-            Properties.Settings.Default.axisSliderChange = byte.Parse(textboxSliderChange.Text);
-            Properties.Settings.Default.axisLeftToeChange = byte.Parse(textboxLeftToeChange.Text);
-            Properties.Settings.Default.axisRightToeChange = byte.Parse(textboxRightToeChange.Text);
-            Properties.Settings.Default.axisRudderChange = byte.Parse(textboxRudderChange.Text);
+                tmp = byte.Parse(textboxMode1.Text);
+                if (tmp > 100)
+                    throw new FormatException();
+                Properties.Settings.Default.mode1Weight = tmp;
 
-            Properties.Settings.Default.changeInterval = short.Parse(textboxChange.Text);
+                tmp = byte.Parse(textboxMode2.Text);
+                if (tmp > 100)
+                    throw new FormatException();
+                Properties.Settings.Default.mode2Weight = tmp;
 
-            Properties.Settings.Default.mode1Button = byte.Parse(textboxMode1Button.Text);
-            Properties.Settings.Default.mode2Button = byte.Parse(textboxMode2Button.Text);
-            Properties.Settings.Default.mode3Button = byte.Parse(textboxMode3Button.Text);
+                tmp = byte.Parse(textboxMode3.Text);
+                if (tmp > 100)
+                    throw new FormatException();
+                Properties.Settings.Default.mode3Weight = tmp;
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Mode weight must be a number 0-100", "Joystick Combiner", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Cancel = true;
+                return;
+            }
+
+            try
+            {
+                byte tmp;
+
+                tmp = byte.Parse(textboxXChange.Text);
+                if (tmp > 100)
+                    throw new FormatException();
+                Properties.Settings.Default.axisXChange = tmp;
+
+                tmp = byte.Parse(textboxYChange.Text);
+                if (tmp > 100)
+                    throw new FormatException();
+                Properties.Settings.Default.axisYChange = tmp;
+
+                tmp = byte.Parse(textboxTwistChange.Text);
+                if (tmp > 100)
+                    throw new FormatException();
+                Properties.Settings.Default.axisTwistChange = tmp;
+
+                tmp = byte.Parse(textboxThrottleChange.Text);
+                if (tmp > 100)
+                    throw new FormatException();
+                Properties.Settings.Default.axisThrottleChange = tmp;
+
+                tmp = byte.Parse(textboxRotary1Change.Text);
+                if (tmp > 100)
+                    throw new FormatException();
+                Properties.Settings.Default.axisRotary1Change = tmp;
+
+                tmp = byte.Parse(textboxRotary2Change.Text);
+                if (tmp > 100)
+                    throw new FormatException();
+                Properties.Settings.Default.axisRotary2Change = tmp;
+
+                tmp = byte.Parse(textboxSliderChange.Text);
+                if (tmp > 100)
+                    throw new FormatException();
+                Properties.Settings.Default.axisSliderChange = tmp;
+
+                tmp = byte.Parse(textboxLeftToeChange.Text);
+                if (tmp > 100)
+                    throw new FormatException();
+                Properties.Settings.Default.axisLeftToeChange = tmp;
+
+                tmp = byte.Parse(textboxRightToeChange.Text);
+                if (tmp > 100)
+                    throw new FormatException();
+                Properties.Settings.Default.axisRightToeChange = tmp;
+
+                tmp = byte.Parse(textboxRudderChange.Text);
+                if (tmp > 100)
+                    throw new FormatException();
+                Properties.Settings.Default.axisRudderChange = tmp;
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Change must be a number 0-100", "Joystick Combiner", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Cancel = true;
+                return;
+            }
+
+            try
+            {
+                short tmp = short.Parse(textboxChange.Text);
+                if (tmp < 0)
+                    throw new FormatException();
+                Properties.Settings.Default.changeInterval = tmp;
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Change interval must be a number greater than 0", "Joystick Combiner", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Cancel = true;
+                return;
+            }
+
+            try
+            {
+                Properties.Settings.Default.mode1Button = byte.Parse(textboxMode1Button.Text);
+                Properties.Settings.Default.mode2Button = byte.Parse(textboxMode2Button.Text);
+                Properties.Settings.Default.mode3Button = byte.Parse(textboxMode3Button.Text);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Mode button must be a number greater than 0", "Joystick Combiner", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Cancel = true;
+                return;
+            }
         }
     }
 }

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JoystickCombiner.vJoyDevice
+namespace JoystickCombiner.VJoyDevices
 {
-    class VJoyJoystick : VJoyDevice
+    class VJoyRudder : VJoyDevice
     {
-        public VJoyJoystick() : base(1) { }
+        public VJoyRudder() : base(2) { }
     }
 }

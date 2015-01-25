@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 using SharpDX.DirectInput;
 
-using JoystickCombiner.deviceReader;
-using JoystickCombiner.virtualDevice;
+using JoystickCombiner.DeviceReaders;
+using JoystickCombiner.VirtualDevices;
 
 namespace JoystickCombiner
 {
@@ -40,15 +41,15 @@ namespace JoystickCombiner
                 virtualJoystick.start();
             }
             else
+            {
                 throw new Exception("No joystick selected.");
+            }
 
             if (leftRudderReader != null || rightRudderReader != null)
             {
                 virtualRudder = new VirtualRudder(leftRudderReader, rightRudderReader);
                 virtualRudder.start();
             }
-            else
-                throw new Exception("No rudder pedals selected.");
 
             running = true;
         }

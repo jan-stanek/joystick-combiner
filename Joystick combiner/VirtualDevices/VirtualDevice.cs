@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 using System.Threading;
 
-using JoystickCombiner.deviceReader;
-using JoystickCombiner.axis;
-using JoystickCombiner.vJoyDevice;
+using JoystickCombiner.DeviceReaders;
+using JoystickCombiner.Axes;
+using JoystickCombiner.VJoyDevices;
 
-namespace JoystickCombiner.virtualDevice
+namespace JoystickCombiner.VirtualDevices
 {
     abstract class VirtualDevice
     {

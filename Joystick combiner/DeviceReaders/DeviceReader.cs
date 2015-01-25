@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 using SharpDX.DirectInput;
 
-using JoystickCombiner.axis;
+using JoystickCombiner.Axes;
 
-namespace JoystickCombiner.deviceReader
+namespace JoystickCombiner.DeviceReaders
 {
     abstract class DeviceReader
     {

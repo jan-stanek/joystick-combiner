@@ -34,9 +34,7 @@ namespace JoystickCombiner
 
             if (checkAutostart.Checked)
             {
-                disableSetting();
-                joystickCombiner.start();
-
+                start();
                 notifyIcon.Visible = true;
             }
         }
@@ -46,6 +44,26 @@ namespace JoystickCombiner
             this.Show();
             this.WindowState = FormWindowState.Normal;
             notifyIcon.Visible = false;
+        }
+
+        private void start()
+        {
+            disableSetting();
+            try
+            {
+                joystickCombiner.start();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message, "Joystick Combiner", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                stop();
+            }
+        }
+
+        private void stop()
+        {
+            enableSetting();
+            joystickCombiner.stop();
         }
 
         private void disableSetting()
@@ -128,8 +146,7 @@ namespace JoystickCombiner
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
-            disableSetting();
-            joystickCombiner.start();
+            start();
         }
 
         private void buttonSaveSettings_Click(object sender, EventArgs e)
@@ -153,8 +170,7 @@ namespace JoystickCombiner
 
         private void buttonStop_Click(object sender, EventArgs e)
         {
-            enableSetting();
-            joystickCombiner.stop();
+            stop();
         }
 
         private void buttonAxes_Click(object sender, EventArgs e)
@@ -185,16 +201,28 @@ namespace JoystickCombiner
         private void radioActiveBoth_CheckedChanged(object sender, EventArgs e)
         {
             Properties.Settings.Default.active = 0;
+            comboLeftJoystick.Enabled = true;
+            comboLeftRudder.Enabled = true;
+            comboRightJoystick.Enabled = true;
+            comboRightRudder.Enabled = true;
         }
 
         private void radioActiveLeft_CheckedChanged(object sender, EventArgs e)
         {
             Properties.Settings.Default.active = 1;
+            comboLeftJoystick.Enabled = true;
+            comboLeftRudder.Enabled = true;
+            comboRightJoystick.Enabled = false;
+            comboRightRudder.Enabled = false;
         }
 
         private void radioActiveRight_CheckedChanged(object sender, EventArgs e)
         {
             Properties.Settings.Default.active = 2;
+            comboLeftJoystick.Enabled = false;
+            comboLeftRudder.Enabled = false;
+            comboRightJoystick.Enabled = true;
+            comboRightRudder.Enabled = true;
         }
 
         private void checkAutostart_CheckedChanged(object sender, EventArgs e)

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using JoystickCombiner.deviceReader;
-using JoystickCombiner.axis;
-using JoystickCombiner.vJoyDevice;
+using JoystickCombiner.DeviceReaders;
+using JoystickCombiner.Axes;
+using JoystickCombiner.VJoyDevices;
 
-namespace JoystickCombiner.virtualDevice
+namespace JoystickCombiner.VirtualDevices
 {
     class VirtualRudder : VirtualDevice
     {

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using JoystickCombiner.deviceReader;
-using JoystickCombiner.vJoyDevice;
+using JoystickCombiner.DeviceReaders;
+using JoystickCombiner.VJoyDevices;
 
-namespace JoystickCombiner.axis
+namespace JoystickCombiner.Axes
 {
     class AxisWeightenedSum : Axis
     {

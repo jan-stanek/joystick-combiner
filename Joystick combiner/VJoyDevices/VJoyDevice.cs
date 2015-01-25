@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 using vJoyInterfaceWrap;
 
-using JoystickCombiner.axis;
+using JoystickCombiner.Axes;
 
-namespace JoystickCombiner.vJoyDevice
+namespace JoystickCombiner.VJoyDevices
 {
     abstract class VJoyDevice
     {
@@ -24,18 +24,18 @@ namespace JoystickCombiner.vJoyDevice
 
             if (!device.vJoyEnabled())
             {
-                throw new Exception("vJoy driver not enabled");
+                throw new Exception("vJoy driver not enabled.");
             }
 
             VjdStat status = device.GetVJDStatus(id);
 
             if (status == VjdStat.VJD_STAT_BUSY)
-                throw new Exception("vJoy device is already in use");
+                throw new Exception("vJoy device is already in use.");
             else if (status == VjdStat.VJD_STAT_MISS)
-                throw new Exception("vJoy device is not installed or disabled");
+                throw new Exception("vJoy device is not installed or disabled.");
 
             if ((status == VjdStat.VJD_STAT_OWN) || ((status == VjdStat.VJD_STAT_FREE) && (!device.AcquireVJD(id))))
-                throw new Exception("Failed to acquire vJoy device " + id);
+                throw new Exception("Failed to acquire vJoy device " + id + ".");
         }
 
         public void stop()

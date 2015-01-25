@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using JoystickCombiner.deviceReader;
-using JoystickCombiner.vJoyDevice;
+using JoystickCombiner.DeviceReaders;
+using JoystickCombiner.VJoyDevices;
 
-namespace JoystickCombiner.axis
+namespace JoystickCombiner.Axes
 {
-    class AxisMinimum : Axis
+    class AxisMaximum : Axis
     {
-        public AxisMinimum(DeviceReader leftDeviceReader, DeviceReader rightDeviceReader, VJoyDevice vJoyDevice, AxisName axisInput, AxisName axisOutput, bool centered)
+        public AxisMaximum(DeviceReader leftDeviceReader, DeviceReader rightDeviceReader, VJoyDevice vJoyDevice, AxisName axisInput, AxisName axisOutput, bool centered)
             : base(leftDeviceReader, rightDeviceReader, vJoyDevice, axisInput, axisOutput, centered) { }
 
         public override int computeValue()
@@ -26,7 +26,7 @@ namespace JoystickCombiner.axis
             else if (rightDeviceReader == null)
             {
                 int leftState = leftDeviceReader.getAxisState(axisInput);
-                
+
                 return leftState / 2;
             }
 
@@ -36,9 +36,9 @@ namespace JoystickCombiner.axis
                 int rightState = centered ? rightDeviceReader.getAxisState(axisInput) - 32768 : rightDeviceReader.getAxisState(axisInput);
 
                 if (centered)
-                    return Math.Min(Math.Abs(leftState), Math.Abs(rightState)) * Math.Sign(leftState + rightState) * Math.Sign(leftState) * Math.Sign(rightState) / 2 + 16384;
+                    return Math.Max(Math.Abs(leftState), Math.Abs(rightState)) * Math.Sign(leftState + rightState) / 2 + 16384;
                 else
-                    return Math.Min(leftState, rightState) / 2;
+                    return Math.Max(leftState, rightState) / 2;
             }
         }
     }
