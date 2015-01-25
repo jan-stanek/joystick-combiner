@@ -258,9 +258,22 @@ namespace JoystickCombiner
 
             try
             {
-                Properties.Settings.Default.mode1Button = byte.Parse(textboxMode1Button.Text);
-                Properties.Settings.Default.mode2Button = byte.Parse(textboxMode2Button.Text);
-                Properties.Settings.Default.mode3Button = byte.Parse(textboxMode3Button.Text);
+                byte tmp;
+
+                tmp = byte.Parse(textboxMode1Button.Text);
+                if (tmp < 1)
+                    throw new FormatException();
+                Properties.Settings.Default.mode1Button = tmp;
+
+                tmp = byte.Parse(textboxMode2Button.Text);
+                if (tmp < 1)
+                    throw new FormatException();
+                Properties.Settings.Default.mode2Button = tmp;
+
+                tmp = byte.Parse(textboxMode3Button.Text);
+                if (tmp < 1)
+                    throw new FormatException();
+                Properties.Settings.Default.mode3Button = tmp;
             }
             catch (FormatException)
             {

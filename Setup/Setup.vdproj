@@ -64,7 +64,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_263E6EBB1BA551A2A401D4671993B980"
+        "OwnerKey" = "8:_4D22D69F4FF70E35875342AA74DC78C6"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -76,7 +76,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4D22D69F4FF70E35875342AA74DC78C6"
+        "OwnerKey" = "8:_263E6EBB1BA551A2A401D4671993B980"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -181,11 +181,6 @@
             "AssemblyAsmDisplayName" = "8:SharpDX.DirectInput, Version=2.6.3.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_263E6EBB1BA551A2A401D4671993B980"
-                    {
-                    "Name" = "8:SharpDX.DirectInput.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:SharpDX.DirectInput.dll"
             "TargetName" = "8:"
@@ -212,11 +207,6 @@
             "AssemblyAsmDisplayName" = "8:vJoyInterfaceWrap, Version=2.0.1.2, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_4D22D69F4FF70E35875342AA74DC78C6"
-                    {
-                    "Name" = "8:vJoyInterfaceWrap.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:vJoyInterfaceWrap.dll"
             "TargetName" = "8:"
@@ -263,11 +253,6 @@
             "AssemblyAsmDisplayName" = "8:SharpDX, Version=2.6.3.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_682280102DEEFF2605083211BD51A559"
-                    {
-                    "Name" = "8:SharpDX.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:SharpDX.dll"
             "TargetName" = "8:"
@@ -363,15 +348,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Joystick combiner"
-        "ProductCode" = "8:{17A462DC-C328-4F1E-ABE1-88F3FA2072C7}"
-        "PackageCode" = "8:{C214CA16-8011-4987-A81F-0563DB862924}"
+        "ProductCode" = "8:{BC115CF9-4B01-400E-93B5-48E1DCF69E43}"
+        "PackageCode" = "8:{AC289621-E69D-4DD2-9D92-5A9A7499F872}"
         "UpgradeCode" = "8:{D51CF36A-528B-4B3C-B276-1ABF6918613A}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.2"
+        "ProductVersion" = "8:1.0.3"
         "Manufacturer" = "8:Jan Staněk"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -899,7 +884,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_0472FB4B778841209D77A7FC6EEF0E60"
             {
-            "SourcePath" = "8:..\\Joystick combiner\\obj\\Debug\\Joystick combiner.exe"
+            "SourcePath" = "8:..\\JoystickCombiner\\obj\\Debug\\Joystick combiner.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_3D7E017B9F414800ABA3DB76B9B5E6A4"
