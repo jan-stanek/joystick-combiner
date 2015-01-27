@@ -112,7 +112,8 @@ namespace JoystickCombiner.VJoyDevices
         {
             if (!device.UpdateVJD(id, ref state))
             {
-                throw new Exception("vJoy update failed.");
+                device.AcquireVJD(id);
+                update();
             }
         }
     }

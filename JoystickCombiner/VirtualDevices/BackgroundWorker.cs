@@ -31,11 +31,12 @@ namespace JoystickCombiner.VirtualDevices
         {
             while(true)
             {
-                foreach(Axis axis in axesList)
+                foreach (Axis axis in axesList)
                     axis.update();
 
+
                 byte buttonsCount = leftDeviceReader == null ? rightDeviceReader.getButtonsCount() : rightDeviceReader == null ? leftDeviceReader.getButtonsCount() : Math.Min(leftDeviceReader.getButtonsCount(), rightDeviceReader.getButtonsCount());
-                
+
                 if (buttonsCount > 0)
                 {
                     bool[] buttons = new bool[buttonsCount];
@@ -57,7 +58,9 @@ namespace JoystickCombiner.VirtualDevices
                     vJoyDevice.setPOVState(i, value);
                 }
 
+
                 vJoyDevice.update();
+
                 Thread.Sleep(1);
             }
         }
