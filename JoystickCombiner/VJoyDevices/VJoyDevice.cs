@@ -89,6 +89,25 @@ namespace JoystickCombiner.VJoyDevices
             }
         }
 
+        public void setPOVState(byte pov, uint value)
+        {
+            switch(pov)
+            {
+                case 0:
+                    state.bHats = value;
+                    break;  
+                case 1:
+                    state.bHatsEx1 = value;
+                    break;
+                case 2:
+                    state.bHatsEx2 = value;
+                    break;
+                case 3:
+                    state.bHatsEx3 = value;
+                    break;
+            }
+        }
+
         public void update()
         {
             if (!device.UpdateVJD(id, ref state))

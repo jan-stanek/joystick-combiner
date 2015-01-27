@@ -27,12 +27,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_4D22D69F4FF70E35875342AA74DC78C6"
-        "OwnerKey" = "8:_0472FB4B778841209D77A7FC6EEF0E60"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_55957A056A4A41A9945FB7CE5A0497D2"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -57,6 +51,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_E917ACBEC1B34383245D844A9F02C430"
+        "OwnerKey" = "8:_0472FB4B778841209D77A7FC6EEF0E60"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_0472FB4B778841209D77A7FC6EEF0E60"
         "MsmSig" = "8:_UNDEFINED"
@@ -64,7 +64,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4D22D69F4FF70E35875342AA74DC78C6"
+        "OwnerKey" = "8:_263E6EBB1BA551A2A401D4671993B980"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -76,7 +76,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_263E6EBB1BA551A2A401D4671993B980"
+        "OwnerKey" = "8:_E917ACBEC1B34383245D844A9F02C430"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -181,34 +181,13 @@
             "AssemblyAsmDisplayName" = "8:SharpDX.DirectInput, Version=2.6.3.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_263E6EBB1BA551A2A401D4671993B980"
+                    {
+                    "Name" = "8:SharpDX.DirectInput.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:SharpDX.DirectInput.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_3D7E017B9F414800ABA3DB76B9B5E6A4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4D22D69F4FF70E35875342AA74DC78C6"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:vJoyInterfaceWrap, Version=2.0.1.2, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                }
-            "SourcePath" = "8:vJoyInterfaceWrap.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_3D7E017B9F414800ABA3DB76B9B5E6A4"
@@ -253,6 +232,11 @@
             "AssemblyAsmDisplayName" = "8:SharpDX, Version=2.6.3.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_682280102DEEFF2605083211BD51A559"
+                    {
+                    "Name" = "8:SharpDX.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:SharpDX.dll"
             "TargetName" = "8:"
@@ -290,6 +274,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E917ACBEC1B34383245D844A9F02C430"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:vJoyInterfaceWrap, Version=2.0.1.2, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_E917ACBEC1B34383245D844A9F02C430"
+                    {
+                    "Name" = "8:vJoyInterfaceWrap.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:vJoyInterfaceWrap.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_3D7E017B9F414800ABA3DB76B9B5E6A4"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
         }
@@ -348,15 +363,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Joystick combiner"
-        "ProductCode" = "8:{BC115CF9-4B01-400E-93B5-48E1DCF69E43}"
-        "PackageCode" = "8:{AC289621-E69D-4DD2-9D92-5A9A7499F872}"
+        "ProductCode" = "8:{26582FB7-1CC9-4D4E-83BF-D2A51F4AACCE}"
+        "PackageCode" = "8:{9660713B-C222-4562-B3E1-A9E314E9166D}"
         "UpgradeCode" = "8:{D51CF36A-528B-4B3C-B276-1ABF6918613A}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.3"
+        "ProductVersion" = "8:1.0.4"
         "Manufacturer" = "8:Jan Staněk"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"

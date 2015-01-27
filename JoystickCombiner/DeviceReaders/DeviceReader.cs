@@ -63,6 +63,16 @@ namespace JoystickCombiner.DeviceReaders
             return getButtonsState()[button - 1];
         }
 
+        public byte getPOVsCount()
+        {
+            return (byte)device.Capabilities.PovCount;
+        }
+
+        public uint getPOVState(byte pov)
+        {
+            return (uint)device.GetCurrentState().PointOfViewControllers[pov];
+        }
+
         public void stop()
         {
             device.Unacquire();   

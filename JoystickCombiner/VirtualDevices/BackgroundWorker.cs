@@ -47,7 +47,16 @@ namespace JoystickCombiner.VirtualDevices
 
                     vJoyDevice.setButtonsState(buttonsCount, buttons);
                 }
-                
+
+
+                byte POVsCount = leftDeviceReader == null ? rightDeviceReader.getPOVsCount() : rightDeviceReader == null ? leftDeviceReader.getPOVsCount() : Math.Min(leftDeviceReader.getPOVsCount(), rightDeviceReader.getPOVsCount());
+
+                for (byte i = 0; i < POVsCount; i++)
+                {
+                    uint value = leftDeviceReader == null ? rightDeviceReader.getPOVState(i) : rightDeviceReader == null ? leftDeviceReader.getPOVState(i) : Math.Min(leftDeviceReader.getPOVState(i), rightDeviceReader.getPOVState(i));
+                    vJoyDevice.setPOVState(i, value);
+                }
+
                 vJoyDevice.update();
                 Thread.Sleep(1);
             }
