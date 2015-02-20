@@ -25,7 +25,6 @@ namespace JoystickCombiner
             
             joystickCombiner = new JoystickCombiner();
 
-            //Properties.Settings.Default.Reset();
             loadSettings();
 
             notifyIcon = new NotifyIcon();
@@ -114,6 +113,13 @@ namespace JoystickCombiner
 
         private void loadSettings()
         {
+            if (Properties.Settings.Default.upgrade)
+            {
+                Properties.Settings.Default.Upgrade();
+                Properties.Settings.Default.upgrade = false;
+                saveSettings();
+            }
+
             switch (Properties.Settings.Default.active)
             {
                 case 0:
@@ -127,18 +133,24 @@ namespace JoystickCombiner
                     break;
             }
 
+            checkAutostart.Checked = Properties.Settings.Default.autostart;
+
             updateJoysticks();
             updateRudders();
             selectDevices();
+        }
 
-            checkAutostart.Checked = Properties.Settings.Default.autostart;
+        private void saveSettings()
+        {
+            Properties.Settings.Default.Save();
+            updateAutostart(); 
         }
 
         private void updateAutostart()
         {
             RegistryKey registryKey = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Run", true);
 
-            if (checkAutostart.Checked)
+            if (Properties.Settings.Default.autostart)
                 registryKey.SetValue("Joystick combiner", Application.ExecutablePath);
             else if (registryKey.GetValue("Joystick combiner") != null)
                 registryKey.DeleteValue("Joystick combiner");
@@ -151,8 +163,7 @@ namespace JoystickCombiner
 
         private void buttonSaveSettings_Click(object sender, EventArgs e)
         {
-            Properties.Settings.Default.Save();
-            updateAutostart();            
+            saveSettings();
         }
 
         private void buttonLoadSettings_Click(object sender, EventArgs e)

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 using vJoyInterfaceWrap;
 
@@ -113,6 +114,7 @@ namespace JoystickCombiner.VJoyDevices
             if (!device.UpdateVJD(id, ref state))
             {
                 device.AcquireVJD(id);
+                Thread.Sleep(1);
                 update();
             }
         }

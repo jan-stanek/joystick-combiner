@@ -17,7 +17,7 @@ namespace JoystickCombiner
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             MainForm mainForm = new MainForm();
-            
+
             if (!Properties.Settings.Default.autostart)
                 mainForm.Show();
             
