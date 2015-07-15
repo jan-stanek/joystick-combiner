@@ -230,7 +230,7 @@
             this.groupModes.Size = new System.Drawing.Size(482, 71);
             this.groupModes.TabIndex = 0;
             this.groupModes.TabStop = false;
-            this.groupModes.Text = "Weightened sum";
+            this.groupModes.Text = "Weighted sum";
             // 
             // labelMode3Button
             // 

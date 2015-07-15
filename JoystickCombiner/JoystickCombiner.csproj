@@ -139,7 +139,7 @@
     <Compile Include="Axes\AxisChange.cs" />
     <Compile Include="Axes\AxisMaximum.cs" />
     <Compile Include="Axes\AxisMinimum.cs" />
-    <Compile Include="Axes\AxisWeightenedSum.cs" />
+    <Compile Include="Axes\AxisWeightedSum.cs" />
     <Compile Include="DeviceReaders\DeviceReader.cs" />
     <Compile Include="DeviceReaders\JoystickReader.cs" />
     <Compile Include="DeviceReaders\RudderReader.cs" />

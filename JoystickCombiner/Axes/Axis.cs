@@ -23,7 +23,7 @@ namespace JoystickCombiner.Axes
 
     enum AxisMethod
     {
-        WeightenedSum = 0,
+        WeightedSum = 0,
         Change = 1,
         Minimum = 2,
         Maximum = 3

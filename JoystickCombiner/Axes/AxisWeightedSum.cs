@@ -9,7 +9,7 @@ using JoystickCombiner.VJoyDevices;
 
 namespace JoystickCombiner.Axes
 {
-    class AxisWeightenedSum : Axis
+    class AxisWeightedSum : Axis
     {
         private byte[] modesWeights;
         private byte[] modesButtons;
@@ -17,7 +17,7 @@ namespace JoystickCombiner.Axes
         static byte leftMode = 0;
         static byte rightMode = 0;
        
-        public AxisWeightenedSum(DeviceReader leftDeviceReader, DeviceReader rightDeviceReader, VJoyDevice vJoyDevice, AxisName axisInput, AxisName axisOutput, bool centered)
+        public AxisWeightedSum(DeviceReader leftDeviceReader, DeviceReader rightDeviceReader, VJoyDevice vJoyDevice, AxisName axisInput, AxisName axisOutput, bool centered)
             : base(leftDeviceReader, rightDeviceReader, vJoyDevice, axisInput, axisOutput, centered) 
         {
             modesWeights = new byte[3];

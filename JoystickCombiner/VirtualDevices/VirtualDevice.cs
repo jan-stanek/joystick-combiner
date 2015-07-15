@@ -51,8 +51,8 @@ namespace JoystickCombiner.VirtualDevices
             {
                 switch (method)
                 {
-                    case AxisMethod.WeightenedSum:
-                        axesList.AddLast(new AxisWeightenedSum(leftDeviceReader, rightDeviceReader, vJoyDevice, axisInput, axisOutput, centered));
+                    case AxisMethod.WeightedSum:
+                        axesList.AddLast(new AxisWeightedSum(leftDeviceReader, rightDeviceReader, vJoyDevice, axisInput, axisOutput, centered));
                         break;
                     case AxisMethod.Change:
                         axesList.AddLast(new AxisChange(leftDeviceReader, rightDeviceReader, vJoyDevice, axisInput, axisOutput, centered, change));
